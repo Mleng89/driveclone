@@ -37,3 +37,24 @@ import { Breadcrumb } from 'react-bootstrap';
 ```
 
 Used bootstrap to set up breadcrumbs, but need to challenge myself and build own breadcrumb logic from scratch. 
+
+- [ ] Wrapping components with one component logic.
+```
+import React from 'react';
+import { Container } from 'react-bootstrap';
+export default function CenteredContainer({ children }) {
+	return (
+		<>
+			<Container
+				className='d-flex align-items-center justify-content-center'
+				style={{ minHeight: '100vh' }}
+			>
+				<div className='w-100' style={{ maxWidth: '400px' }}>
+					{children}
+				</div>
+			</Container>
+		</>
+	);
+}
+```
+Used this to wrap around authentication components to center items on the page.
