@@ -30,3 +30,10 @@ This allows for authentication & user matching to read, write, and update in the
 function useFolder(){}
 ```
 Able to recreate a redux store, without creating a redux store. 
+
+- [ ] Breadcrumbs:
+```
+import { Breadcrumb } from 'react-bootstrap';
+```
+
+Used bootstrap to set up breadcrumbs, but need to challenge myself and build own breadcrumb logic from scratch. 
